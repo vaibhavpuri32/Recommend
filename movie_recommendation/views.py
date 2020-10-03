@@ -10,3 +10,7 @@ def home_page(req):
 		print(req.POST)
 	return render(req, 'homepage.html')
 
+def creator_page(req):
+	if req.method == 'POST':
+		print(req.POST)
+	return render(req, 'creator.html')
